@@ -8,7 +8,8 @@
     "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build:github",
+    "build:github": "vite build --base=/colour-picker-hariharan/",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
