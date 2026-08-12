@@ -193,8 +193,12 @@ This deployment uses the Vite production build and the `gh-pages` package.
 <div align="center">
 
 ### 🎨 Colour Picker Interface
-
-*Add your project screenshot here.*
+<img src="https://raw.githubusercontent.com/04harithecoder/colour-picker-hariharan/main/src/assets/Screenshot(1).png"/>
+<br>
+<img src="https://raw.githubusercontent.com/04harithecoder/colour-picker-hariharan/main/src/assets/Screenshot(2).png"/>
+<br>
+<img src="https://raw.githubusercontent.com/04harithecoder/colour-picker-hariharan/main/src/assets/Screenshot(3).png"/>
+<br>
 
 </div>
 
@@ -258,12 +262,12 @@ This project is available for educational and personal use.
 
 ### Hariharan
 
-**Student Developer | React Enthusiast | Project Builder**
+**Student Developer | React Enthusiast | Founder(Hariharan Pattarai)**
 
 <p>
   <a href="https://github.com/04harithecoder">GitHub</a>
   ·
-  <a href="https://www.linkedin.com/">LinkedIn</a>
+  <a href="https://www.linkedin.com/in/hariharan-vijayan-145812323">LinkedIn</a>
 </p>
 
 </div>
