@@ -278,7 +278,7 @@ This project is available for educational and personal use.
 
 ### ⭐ If you found this project useful, consider giving it a star!
 
-**Built with ❤️ using React + Vite**
+**Made by HARIHARAN PATTARAI, with ❤️**
 
 🎨 **Pick a colour. Preview it. Build something awesome.**
 
