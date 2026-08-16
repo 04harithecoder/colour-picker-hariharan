@@ -2,25 +2,23 @@ import React, { useState, useEffect } from 'react';
 import ParticleText from './ParticleText';
 import './LoadingScreen.css';
 
-const TOTAL_LOADING_TIME = 10; // 60 seconds (1 minute)
+const TOTAL_LOADING_TIME = 10; // 10 seconds
 
-const LoadingScreen = ({ onComplete }) => {
+const LoadingScreen = ({ onComplete, theme = 'light' }) => {
   const [timeLeft, setTimeLeft] = useState(TOTAL_LOADING_TIME);
 
   useEffect(() => {
+    if (timeLeft <= 0) {
+      if (onComplete) onComplete();
+      return;
+    }
+
     const timer = setInterval(() => {
-      setTimeLeft((prev) => {
-        if (prev <= 1) {
-          clearInterval(timer);
-          if (onComplete) onComplete();
-          return 0;
-        }
-        return prev - 1;
-      });
+      setTimeLeft((prev) => Math.max(0, prev - 1));
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [onComplete]);
+  }, [timeLeft, onComplete]);
 
   const progressPercent = ((TOTAL_LOADING_TIME - timeLeft) / TOTAL_LOADING_TIME) * 100;
 
@@ -31,7 +29,7 @@ const LoadingScreen = ({ onComplete }) => {
           text="Welcome"
           particleSize={2}
           density={5}
-          color="#0f172a"
+          color={theme === 'dark' ? '#f8fafc' : '#0f172a'}
           highlightColor="#6366f1"
           scatter={180}
           gatherDuration={1600}

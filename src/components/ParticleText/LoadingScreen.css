@@ -6,9 +6,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(circle at center, #ffffff 0%, #f1f5f9 100%);
-  color: #0f172a;
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: radial-gradient(circle at center, var(--bg-card) 0%, var(--bg-app) 100%);
+  color: var(--text-primary);
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   overflow: hidden;
   user-select: none;
   animation: fadeInLoading 0.5s ease-out forwards;
@@ -36,7 +36,7 @@
 .loading-progress-bar-bg {
   width: 280px;
   height: 5px;
-  background: rgba(15, 23, 42, 0.08);
+  background: var(--border-color);
   border-radius: 999px;
   overflow: hidden;
   position: relative;
@@ -52,7 +52,7 @@
 
 .loading-timer-badge {
   font-size: 0.875rem;
-  color: #64748b;
+  color: var(--text-secondary);
   letter-spacing: 0.05em;
   font-weight: 600;
   display: flex;
@@ -71,19 +71,19 @@
   padding: 0.45rem 1.3rem;
   font-size: 0.825rem;
   font-weight: 600;
-  color: #475569;
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
+  color: var(--text-secondary);
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
   border-radius: 20px;
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  box-shadow: var(--shadow-sm);
   transition: all 0.2s ease;
 }
 
 .skip-button:hover {
   color: #4f46e5;
-  background: #f5f3ff;
-  border-color: #c4b5fd;
+  background: var(--bg-hover);
+  border-color: var(--accent-border);
   box-shadow: 0 4px 14px rgba(99, 102, 241, 0.18);
   transform: translateY(-1px);
 }
