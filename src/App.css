@@ -73,6 +73,11 @@
   transition: color 0.3s ease;
 }
 
+.brand-subtitle-flap {
+  margin-top: 4px;
+  display: flex;
+}
+
 /* Main Content Grid */
 .app-content-grid {
   display: grid;

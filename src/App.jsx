@@ -5,6 +5,7 @@ import PresetPalettes from './components/PresetPalettes';
 import ColorHistory from './components/ColorHistory';
 import ThemeToggle from './components/ThemeToggle';
 import LoadingScreen from './components/ParticleText/LoadingScreen';
+import SplitFlapText from './components/SplitFlapText';
 import { isValidHex } from './utils/colorUtils';
 import lightLogo from './assets/Light-logo.png';
 import darkLogo from './assets/Dark-logo.png';
@@ -74,7 +75,22 @@ function App() {
           </div>
           <div>
             <h1 className="brand-title">Colour Picker Previewer</h1>
-            <p className="brand-subtitle">Minimalist color tool & live preview studio</p>
+            <SplitFlapText
+              words={['FREE TOOL', 'LIVE PREVIEW', 'MINIMALIST TOOL']}
+              flipDuration={0.12}
+              stagger={0.06}
+              cycleDelay={2400}
+              charset="alphanumeric"
+              flipsPerChar={8}
+              tileColor={theme === 'dark' ? '#162032' : '#0f172a'}
+              textColor="#f8fafc"
+              tileRadius={4}
+              gap={3}
+              fontSize={13}
+              loop
+              padTo={15}
+              className="brand-subtitle-flap"
+            />
           </div>
         </div>
 
